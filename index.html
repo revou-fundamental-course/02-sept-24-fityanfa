@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matematik Segitiga</h1>
+        <form id="triangleForm">
+            <label for="base">Alas (cm):</label>
+            <input type="number" id="base" name="base" required>
+            
+            <label for="height">Tinggi (cm):</label>
+            <input type="number" id="height" name="height" required>
+            
+            <label for="sideA">Sisi A (cm):</label>
+            <input type="number" id="sideA" name="sideA" required>
+            
+            <label for="sideB">Sisi B (cm):</label>
+            <input type="number" id="sideB" name="sideB" required>
+            
+            <button type="submit">Hitung</button>
+        </form>
+
+        <div id="result">
+            <p>Luas Segitiga: <span id="areaResult">-</span> cm²</p>
+            <p>Keliling Segitiga: <span id="perimeterResult">-</span> cm</p>
+        </div>
+
+        <!-- SVG for Triangle Simulation -->
+        <div id="triangleDisplay">
+            <svg id="triangleSVG" width="300" height="300">
+                <polygon id="triangleShape" points="0,0 150,0 0,150" fill="none" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
